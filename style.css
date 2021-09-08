@@ -1,6 +1,62 @@
-main {color: whitesmoke;}
+main {color: whitesmoke;
+    margin: 0px 300px 0px 500px;
+}
 
-body {background-color: rgb(53, 53, 53);}
+.large-letters{font-size: 2cm;
+  margin-bottom: -10px;
+}
 
-nav {font-style: italic;} 
-nav {color: darkblue;}
+body {background-color: black;
+}
+
+nav {font-style: italic;
+  margin: 0px 300px 5px 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.navbar {list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 10%;
+          background-color: #000000;
+          border: 5px solid rgb(95, 95, 95);
+          height: 30%;
+          position: fixed;
+          overflow: auto;
+}
+
+li a {display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.medium-image {width: 500px;
+                border-radius: 50%;
+}
+
+.empty-line {margin: 25px;
+}
+
+.active {
+  background-color: #02005c;
+  color: rgb(255, 255, 255);
+}
+
+.current-page{font-family: sans-serif, Arial, Helvetica, sans-serif;
+              font-style: initial;
+              background-color: #ff2525;
+              color: rgb(255, 255, 255);
+}
+
+.different-page{
+  background-color: rgb(55, 122, 0);
+  color: #ffffff;
+}
+
+#hzlogo{
+  margin: -100px -100px -250px -200px;
+  padding: 0px 200px 0px 0px;
+}
