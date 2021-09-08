@@ -60,3 +60,19 @@ li a {display: block;
   margin: -100px -100px -250px -200px;
   padding: 0px 200px 0px 0px;
 }
+
+.faqol{ 
+  font-size: xx-large;      
+}
+.faqli{
+  font-style: oblique;
+  margin-bottom: -5px;
+  margin-top: 10px;
+  color: rgb(165, 165, 165);
+}
+
+.grid-container{
+  display: ruby;
+  grid-template-areas: 
+  'header header header header header header';
+}
