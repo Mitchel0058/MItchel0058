@@ -18,10 +18,10 @@ nav {font-style: italic;
 .navbar {list-style-type: none;
           margin: 0;
           padding: 0;
-          width: 10%;
+          width: 11%;
           background-color: #000000;
           border: 5px solid rgb(95, 95, 95);
-          height: 30%;
+          height: 45%;
           position: fixed;
           overflow: auto;
 }
@@ -37,8 +37,6 @@ li a {display: block;
                 border-radius: 50%;
 }
 
-.empty-line {margin: 25px;
-}
 
 .active {
   background-color: #02005c;
@@ -57,22 +55,60 @@ li a {display: block;
 }
 
 #hzlogo{
-  margin: -100px -100px -250px -200px;
+  margin: -100px -100px -200px -200px;
   padding: 0px 200px 0px 0px;
 }
 
 .faqol{ 
-  font-size: xx-large;      
+  font-size: 20px;      
 }
 .faqli{
   font-style: oblique;
-  margin-bottom: -5px;
-  margin-top: 10px;
-  color: rgb(165, 165, 165);
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: rgb(204, 204, 204);
 }
 
-.grid-container{
-  display: ruby;
+.container{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 10px; 
   grid-template-areas: 
-  'header header header header header header';
+    "Quartile-1 Q1T1 Q1T2 Q1T3"
+    "Quartile-2 Q2T1 Q2T2 Q2T4"
+    "Quartile-3 Q3T1 Q3T2 Q3T3"
+    "Quartile-4 Q4T1 Q4T2 Q4T3"; 
+  justify-items: stretch; 
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 30px;
+  margin-left: 250px;
+  border-color: white;
+}
+.Quartile-1 { grid-area: Quartile-1; background-color: rgb(0, 1, 83);}
+.Quartile-2 { grid-area: Quartile-2; background-color: rgb(0, 2, 109);}
+.Quartile-3 { grid-area: Quartile-3; background-color: rgb(0, 1, 83);}
+.Quartile-4 { grid-area: Quartile-4; background-color: rgb(0, 2, 109);}
+.Q1T1 { grid-area: Q1T1; }
+.Q1T2 { grid-area: Q1T2; }
+.Q1T3 { grid-area: Q1T3; }
+.Q2T1 { grid-area: Q2T1; }
+.Q2T2 { grid-area: Q2T2; }
+.Q3T3 { grid-area: Q3T3; }
+.Q2T4 { grid-area: Q2T4; }
+.Q3T1 { grid-area: Q3T1; }
+.Q3T2 { grid-area: Q3T2; }
+.Q4T1 { grid-area: Q4T1; }
+.Q4T2 { grid-area: Q4T2; }
+.Q4T3 { grid-area: Q4T3; }
+
+.testnotfinished{
+  background-color: red;
+}
+.testnotbegun{
+  background-color: orange;
+}
+.testfinished{
+  background-color: green;
 }
