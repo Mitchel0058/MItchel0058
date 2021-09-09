@@ -1,5 +1,6 @@
-main {color: whitesmoke;
-    margin: 0px 300px 0px 500px;
+main{color: whitesmoke;
+      position: fixed;
+      left: 200px
 }
 
 .large-letters{font-size: 2cm;
@@ -55,12 +56,21 @@ li a {display: block;
 }
 
 #hzlogo{
-  margin: -100px -100px -200px -200px;
-  padding: 0px 200px 0px 0px;
+  width: 350px;
+  position: fixed;
+  left: 1150px;
+  top: 10px;
+}
+#mepic{
+  width: 200px;
+  position: absolute;
+  top: 110px;
+  left: 1100px;
 }
 
 .faqol{ 
-  font-size: 20px;      
+  font-size: 20px; 
+  margin-right: 200px;     
 }
 .faqli{
   font-style: oblique;
@@ -82,8 +92,10 @@ li a {display: block;
   justify-items: stretch; 
   background-color: rgb(0, 0, 0);
   color: white;
+  position: fixed;
   font-size: 30px;
-  margin-left: 250px;
+  top: 75px;
+  margin-left: 200px;
   border-color: white;
 }
 .Quartile-1 { grid-area: Quartile-1; background-color: rgb(0, 1, 83);}
@@ -127,8 +139,29 @@ a:hover{
   color: #cdfffb;
 }
 
+.blog1container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1000px; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+  "blog1"; 
+  background-color: #03002c;
+  border-radius: 50px 50px 50px 5px;
+  text-align: center;
+  font-size: 30px;
+}
+.blog1 { grid-area: blog1;
+        padding-left: 30px;
+        padding-right: 30px;
+}
 
-/* html validator
+
+/* People
+was using margin for the position of pictures, postion: ""; works better
+
+html validator
 index.html - good
 profile.html - removed uneccesary <p>
 post.html - good
