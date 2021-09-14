@@ -5,11 +5,12 @@ main{color: whitesmoke;
 
 .large-letters{font-size: 2cm;
   margin-bottom: -10px;
+  text-align: center;
 }
 
 body {height: 100%;
   background-attachment: fixed;
-  background-image: linear-gradient(black, rgb(0, 0, 10), rgb(0, 0, 15), rgb(0, 0, 30));
+  background-image: linear-gradient(black, rgb(0, 0, 10), rgb(0, 0, 20), rgb(30, 0, 0));
 }
 
 nav {font-style: italic;
@@ -103,6 +104,14 @@ li a {display: block;
   background-color: #1f1f1f;
   display: block;
   block-size: 100px 10px;
+  position: relative;
+  top: 100px;
+}
+#asidetext{
+  position: relative;
+  top: 20px;
+  left: 500px;
+  font-size: 50px;
 }
 
 a:hover{
@@ -118,8 +127,8 @@ a:hover{
   gap: 0px 0px; 
   grid-template-areas: 
   "blog1"; 
-  background-color: #03002c;
-  border-radius: 50px 50px 50px 5px;
+  background-image: linear-gradient(to bottom left, rgb(3, 0, 44), rgb(3, 0, 20));
+  border-radius: 50px 50px 50px 0px;
   text-align: center;
   font-size: 30px;
   margin-bottom: 25px;
@@ -128,7 +137,7 @@ a:hover{
         padding-left: 30px;
         padding-right: 30px;
         border: 1px solid rgb(0, 72, 121);
-        border-radius: 50px 50px 50px 5px;
+        border-radius: 50px 50px 50px 0px;
 }
 
 table, th, td {border: 1px solid rgb(122, 122, 122);
@@ -155,3 +164,17 @@ table {position: relative;
 }
 progress::-webkit-progress-value {background: blue;}
 progress::-moz-progress-bar {background: blue;}
+
+.post{margin-right: 300px;}
+.postul{margin-bottom: -10px;}
+.postul:nth-child(even){
+  background-color: rgb(30, 30, 30);
+  border-radius: 5px;
+}
+
+.studiekeuzetable{border: 1px solid rgb(73, 73, 73);
+  border-radius: 0px;
+  position: relative;
+  top: 0px;
+  left: 0px;}
+.studiekeuzeul{font-style: italic;}
